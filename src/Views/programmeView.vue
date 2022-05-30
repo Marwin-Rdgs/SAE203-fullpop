@@ -1,4 +1,6 @@
 <template>
+
+<note class="absolute w-80 left-1/2"/>
     <div class="grid lg:grid-cols-3 grid-cols-2 mt-4">
         <frise class="lg:ml-2 lg:h-1/3 h-1/2"/>
         <ul>
@@ -12,6 +14,8 @@
                 </div>
             </div> </li>
 
+<note class="absolute w-80 -left-0"/>
+
             <!-- Section Pop Japonaise -->
             <li class="mb-16"> <div class="group hover:shadow-2xl hover:scale-105 ml-auto mr-auto">
                 <!-- <fond class="absolute z-1 left-0 w-full"/> -->
@@ -23,6 +27,8 @@ attendent dans ce concert le samedi 18 juin 2022 de 20h00 à 00h00.</p>
                     <RouterLink to="/"><button class="ml-auto border-2 py-2 px-4 rounded-full border-violet2 text-violet2 mt-2">Voir plus</button></RouterLink>
                 </div> 
                 </div></li>        
+
+<note class="absolute w-80 left-1/2"/>
 
             <!-- Section Pop Coréenne -->
             <li class="mb-16"> <div class="group hover:shadow-2xl hover:scale-105 ml-auto mr-auto">
@@ -42,8 +48,9 @@ le Dimanche 19 Juin 2022 de 22h00 à 02h00.</p>
 <script>
 import frise from "../components/icones/frise.vue"
 import fond from "../components/icones/fondprog.vue"
+import note from "../components/icones/notemusic.vue"
 
 export default {
-    components:{ frise, fond }
+    components:{ frise, fond, note }
 };
 </script>
