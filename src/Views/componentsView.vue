@@ -1,5 +1,5 @@
 <template>
-
+<h1>les composants</h1>
 
 </template>
 

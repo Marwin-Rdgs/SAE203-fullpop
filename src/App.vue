@@ -26,5 +26,7 @@ import footer1 from "./components/footer.vue";
 
 export default {
   name: "App",
+
+  components:{ header1, footer1 }
 };
 </script>
