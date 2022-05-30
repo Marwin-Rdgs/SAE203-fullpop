@@ -2,11 +2,11 @@
 
 <div class="w-full bg-violet2 border-b-8 border-jaune2">
     <div class="flex">
-        <RouterLink to="/"> <logo class="scale-75"/> </RouterLink>
+        <RouterLink to="/"> <logo class="scale-75 mr-auto"/> </RouterLink>
         <div class="flex ml-auto mr-auto gap-16 my-6">
-        <RouterLink to="/programmation"> <p class="text-3xl text-center text-jaune2 hover:text-white font-mono">Programme</p> </RouterLink>
+        <RouterLink to="/programmation"> <p class="lg:text-3xl text-sm text-center text-jaune2 hover:text-white font-mono">Programme</p> </RouterLink>
         <p class="text-white text-3xl"> | </p>
-        <RouterLink to="/lesartistes"> <p class="text-3xl text-center text-jaune2 hover:text-white font-mono">Artistes</p> </RouterLink>
+        <RouterLink to="/lesartistes"> <p class="lg:text-3xl text-sm text-center text-jaune2 hover:text-white font-mono">Artistes</p> </RouterLink>
         </div>
         <bouton class="ml-auto my-6"
         txt="Commander un billet"

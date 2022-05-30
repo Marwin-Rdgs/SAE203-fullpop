@@ -8,6 +8,7 @@ import contactView from '../Views/contactView.vue'
 import festivalView from '../Views/festivalView.vue' 
 import lesartistesView from '../Views/lesartistesView.vue' 
 import programmeView from '../Views/programmeView.vue' 
+import newsletterpopupView from '../Views/newsletter_popup.vue' 
 
 const router = createRouter ({
     history: createWebHistory(import.meta.env.BASE_URL),
@@ -20,7 +21,8 @@ const router = createRouter ({
         {path: '/contact', name: 'contactView', component: contactView},
         {path: '/festival', name: 'festivalView', component: festivalView},
         {path: '/lesartistes', name: 'lesartistesView', component: lesartistesView},
-        {path: '/programmation', name: 'programmeView', component: programmeView}
+        {path: '/programmation', name: 'programmeView', component: programmeView},
+        {path: '/newsletterpopup', name: 'newsletterpopupView', component: newsletterpopupView},
     ]
 })
 
