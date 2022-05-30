@@ -1,5 +1,4 @@
 <template>
-
 <note class="absolute w-80 left-1/2"/>
     <div class="grid lg:grid-cols-3 grid-cols-2 mt-4">
         <frise class="lg:ml-2 lg:h-1/3 h-1/2"/>
