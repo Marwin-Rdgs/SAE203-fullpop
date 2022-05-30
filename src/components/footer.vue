@@ -1,10 +1,10 @@
 <template>
-<div class="w-full bg-violet2 border-t-8 border-jaune2">
+<div class="w-full bg-violet2 border-t-8 border-jaune2 overflow-hidden">
     <div class="flex gap-12">
         <nav>
             <ul>
-                <RouterLink to="/festival"> <li class="text-white">A propos</li> </RouterLink>
-                <RouterLink to="/contact"> <li class="text-white">Contact</li> </RouterLink>
+                <RouterLink to="/festival"> <li class="text-white text-md"> <NOBR> A propos </NOBR> </li> </RouterLink>
+                <RouterLink to="/contact"> <li class="text-white text-md">Contact</li> </RouterLink>
             </ul>
         </nav>
         <div> 
@@ -23,16 +23,15 @@
             </form>
         </div>
         <div class="ml-auto">
-            <h2 class="text-white">Réseaux sociaux</h2>
+            <h2 class="text-white text-xs">Réseaux sociaux</h2>
             <div class="flex gap-2">
                 <img src="./icones/instagram.png" alt="Logo Instagram" class="w-1/3 lg:scale-50">
                 <img src="./icones/youtube.png" alt="Logo Youtube" class="w-1/3 lg:scale-50">
-                <img src="./icones/facebook.png" alt="Logo Facebook" class="w-1/3 lg:scale-50">
             </div>
         </div>
     </div>
 
-   <RouterLink to="/mentionslegales"> <p class="text-white text-center">Termes et conditions | Politique de confidentialité | Politique de cookies</p> </RouterLink>
+   <RouterLink to="/mentionslegales"> <p class="text-white text-center text-xs mt-4">Termes et conditions & Politique de confidentialité </p> </RouterLink>
 </div>
 </template>
 
