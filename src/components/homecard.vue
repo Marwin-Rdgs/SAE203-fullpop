@@ -4,10 +4,10 @@
 >
   <div class="self-stretch flex-grow-0 flex-shrink-0 h-[200px]">
     <div
-      class="w-[352px] h-[200px] absolute left-[-0.5px] top-[-0.5px] rounded-tl-lg rounded-tr-lg bg-[#130f26]"
+      class="w-[352px] h-[200px] absolute left-[-0.5px] top-[-0.5px] rounded-tl-lg rounded-tr-lg"
     ></div>
     <img
-      class="w-[352px] h-[235px] absolute left-[-0.5px] top-[-24.5px]"
+      class="w-full h-56 absolute rounded-lg"
       :src="img"
     />
   </div>

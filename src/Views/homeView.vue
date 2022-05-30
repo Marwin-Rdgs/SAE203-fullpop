@@ -14,19 +14,40 @@
 
 <div class="w-full">
   <p class="font-mono font-semibold lg:text-lg">Nos concerts</p>
-  <hr class="bg-black"/>
+  <hr class="bg-black mb-4"/>
 </div>
 
-<homecard
-img="/public/img/home_img1.png"
-title="Pop Française"
-txt="2h"
-url="#"
-date="12/09/2022"
-chanteurs="Angèle, Callogero, ..."
-place="2000"/>
+<div class="grid lg:grid-cols-3 md:grid-cols-2 place-items-stretch place-self-center">
 
-<h1>Bienvenue sur FullPop.fr</h1>
+
+  <homecard class="lg:mb-0 mb-10"
+  img="/public/img/popfr_minia.jpg"
+  title="Pop Française"
+  txt="2h"
+  url="#"
+  date="12/09/2022"
+  chanteurs="Angèle, Callogero, ..."
+  place="2000"/>
+
+    <homecard class="lg:mb-0 mb-10"
+  img="/public/img/popjap_minia.jpg"
+  title="Pop Japonaise"
+  txt="3h"
+  url="#"
+  date="13/09/2022"
+  chanteurs="Lisa, ..."
+  place="4500"/>
+
+    <homecard class="lg:mb-0 mb-10"
+  img="/public/img/popk_minia.jpg"
+  title="Pop Coréenne"
+  txt="4h"
+  url="#"
+  date="14/09/2022"
+  chanteurs="Loona, BTS,  ..."
+  place="4500"/>
+
+</div>
 
 </template>
 
