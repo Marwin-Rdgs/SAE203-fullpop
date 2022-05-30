@@ -10,9 +10,10 @@
 
 </div>
 
-<a href="#"><arrowdown class="scale-50 ml-auto mr-auto"/></a>
+<a href="#down"><arrowdown class="scale-50 ml-auto mr-auto"/></a>
 
-<div class="w-full">
+<!-- Section Concerts -->
+<div class="w-full" id="down">
   <p class="font-mono font-semibold lg:text-lg">Nos concerts</p>
   <hr class="bg-black mb-4"/>
 </div>
@@ -20,7 +21,7 @@
 <div class="grid lg:grid-cols-3 md:grid-cols-2 place-items-stretch place-self-center">
 
 
-  <homecard class="lg:mb-0 mb-10"
+  <homecard class="mb-10"
   img="/public/img/popfr_minia.jpg"
   title="Pop Française"
   txt="2h"
@@ -29,7 +30,7 @@
   chanteurs="Angèle, Callogero, ..."
   place="2000"/>
 
-    <homecard class="lg:mb-0 mb-10"
+    <homecard class="mb-10"
   img="/public/img/popjap_minia.jpg"
   title="Pop Japonaise"
   txt="3h"
@@ -38,7 +39,7 @@
   chanteurs="Lisa, ..."
   place="4500"/>
 
-    <homecard class="lg:mb-0 mb-10"
+    <homecard class="mb-10"
   img="/public/img/popk_minia.jpg"
   title="Pop Coréenne"
   txt="4h"
@@ -49,13 +50,59 @@
 
 </div>
 
+<!-- Section Artistes -->
+<div class="w-full mt-10" id="down">
+  <p class="font-mono font-semibold lg:text-lg">Nos artistes</p>
+  <hr class="bg-black mb-4"/>
+</div>
+
+<div class="grid lg:grid-cols-3 md:grid-cols-2 place-items-stretch place-self-center">
+
+
+  <homecard class="mb-10"
+  img="/public/img/popfr_minia.jpg"
+  title="Angèle"
+  url="#"
+  chanteurs="Chanteuse Pop française"/>
+
+    <homecard class="mb-10"
+  img="/public/img/popfr_minia.jpg"
+  title="Callogero"
+  url="#"
+  chanteurs="Chanteur Pop française"/>
+
+    <homecard class="mb-10"
+  img="/public/img/popfr_minia.jpg"
+  title="BTS"
+  url="#"
+  chanteurs="Groupe de K-POP"/>
+
+    <homecard class="mb-10"
+  img="/public/img/popfr_minia.jpg"
+  title="Loona"
+  url="#"
+  chanteurs="Groupe de K-POP"/>
+
+    <homecard class="mb-10"
+  img="/public/img/popfr_minia.jpg"
+  title="Lisa"
+  url="#"
+  chanteurs="Chanteuse Pop Japonaise"/>
+
+  <bouton class="col-span-full ml-auto mr-auto mb-10"
+  txt="Voir le programme"
+  url="/programmation"/>
+
+</div>
+
 </template>
 
 <script>
 import arrowdown from "../components/icones/arrowdown.vue"
 import homecard from "../components/homecard.vue"
+import bouton from "../components/bouton.vue"
 
 export default {
-    components:{ arrowdown, homecard }
+    components:{ arrowdown, homecard, bouton }
 };
 </script>

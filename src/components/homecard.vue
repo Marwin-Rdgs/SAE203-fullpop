@@ -95,7 +95,7 @@ props: {
 
     txt: {
       type: String,
-      default: "2h", 
+      default: "", 
     },
 
     chanteurs: {
