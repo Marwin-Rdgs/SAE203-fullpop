@@ -31,6 +31,8 @@
             </div>
         </div>
     </div>
+
+   <RouterLink to="/mentionslegales"> <p class="text-white text-center">Termes et conditions | Politique de confidentialité | Politique de cookies</p> </RouterLink>
 </div>
 </template>
 
