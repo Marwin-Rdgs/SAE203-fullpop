@@ -7,7 +7,7 @@
                 <RouterLink to="/contact"> <li class="text-white text-md">Contact</li> </RouterLink>
             </ul>
         </nav>
-        <div> 
+        <div class="ml-auto mr-auto"> 
             <h2 class="text-white text-center">Newsletter</h2>
 
             <form action="" class="bg-jaune2 p-2 rounded-3xl">
