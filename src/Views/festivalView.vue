@@ -1,6 +1,6 @@
 <template>
 
-<img src="public/img/festival.jpg" alt="Miniature Festival">
+<img src="public/img/festival.jpg" alt="Miniature Festival" class="w-full">
 
 <div class="bg-gray-400 bg-opacity-30 w-1/2 ml-auto mr-auto my-20 rounded-lg">
   <h2 class="text-center text-lg ml-auto mr-auto">FullPop</h2>
