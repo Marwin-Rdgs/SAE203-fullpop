@@ -8,7 +8,7 @@
                 <!-- Bouton menu -->
                 <div class="ipad_pro:hidden flex items-center">
                     <button @click="menuVisible = !menuVisible" class=" py-5 px-2 "> 
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-white" viewBox="0 0 20 20" fill="currentColor">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-jaune2" viewBox="0 0 20 20" fill="currentColor">
                         <path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd" />
                         </svg>
                     </button>
@@ -41,9 +41,9 @@
       </div>
       <!-- Menu mobile -->
       <div class="text-white bg-violet2 border-b-8 border-jaune2 ipad_pro:hidden" :class="{hidden: menuVisible}">
-        <RouterLink class="block py-2 px-4 hover:text-white" to="/programmation">Programme</RouterLink>
-        <RouterLink class="block py-2 px-4 hover:text-white" to="/lesartistes">Artistes</RouterLink>
-        <div class="mb-4"><RouterLink to="/"> <bouton txt="Commander un ticket" url="#"/> </RouterLink></div>
+        <RouterLink class="block py-2 px-4 hover:text-white" to="/programmation" @click="menuVisible = !menuVisible">Programme</RouterLink>
+        <RouterLink class="block py-2 px-4 hover:text-white" to="/lesartistes" @click="menuVisible = !menuVisible">Artistes</RouterLink>
+        <div class="mb-4"><RouterLink to="/"> <bouton txt="Commander un ticket" url="#" @click="menuVisible = !menuVisible"/> </RouterLink></div>
       </div>
   </nav>
 
