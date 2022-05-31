@@ -1,13 +1,13 @@
 <template>
 <div class="w-full bg-violet2 border-t-8 border-jaune2 overflow-hidden">
-    <div class="flex gap-12">
+    <div class="grid lg:grid-cols-3 gap-12">
         <nav>
-            <ul>
+            <ul class="text-center">
                 <RouterLink to="/festival"> <li class="text-white text-md"> <NOBR> A propos </NOBR> </li> </RouterLink>
                 <RouterLink to="/contact"> <li class="text-white text-md">Contact</li> </RouterLink>
             </ul>
         </nav>
-        <div class="ml-auto mr-auto"> 
+        <div class="lg:ml-auto lg:mr-auto"> 
             <h2 class="text-white text-center">Newsletter</h2>
 
             <form action="" class="bg-jaune2 p-2 rounded-3xl">
@@ -22,11 +22,11 @@
                 </RouterLink>
             </form>
         </div>
-        <div class="ml-auto">
+        <div class="lg:ml-auto">
             <h2 class="text-white text-xs">Réseaux sociaux</h2>
             <div class="flex gap-2">
-                <img src="./icones/instagram.png" alt="Logo Instagram" class="w-1/3 lg:scale-50">
-                <img src="./icones/youtube.png" alt="Logo Youtube" class="w-1/3 lg:scale-50">
+                <img src="./icones/instagram.png" alt="Logo Instagram" class="w-1/3 scale-50">
+                <img src="./icones/youtube.png" alt="Logo Youtube" class="w-1/3 scale-50">
             </div>
         </div>
     </div>

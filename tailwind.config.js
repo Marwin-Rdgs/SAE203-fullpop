@@ -13,6 +13,11 @@ module.exports = {
         "jaune2": "#ebef34",
         "violet2": "#ba58ce"
        },
+       "screens": {
+        "ipad_mini": '744px',
+        "ipad_pro": '1024px',
+        "desktop": '1440px',
+      },
        "fontSize": {
         "sm": "1.25rem",
         "base": "1.5625rem",
