@@ -23,8 +23,8 @@
             </form>
         </div>
         <div class="lg:ml-auto">
-            <h2 class="text-white text-xs">Réseaux sociaux</h2>
-            <div class="flex gap-2">
+            <h2 class="text-white text-xs text-center">Réseaux sociaux</h2>
+            <div class="flex justify-center gap-2">
                 <img src="./icones/instagram.png" alt="Logo Instagram" class="w-1/3 scale-50">
                 <img src="./icones/youtube.png" alt="Logo Youtube" class="w-1/3 scale-50">
             </div>

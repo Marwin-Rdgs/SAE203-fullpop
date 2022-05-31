@@ -60,31 +60,31 @@
 
 
   <homecard class="mb-10"
-  img="/public/img/popfr_minia.jpg"
+  img="/public/img/chanteurs/angele.jpg"
   title="Angèle"
   url="#"
   chanteurs="Chanteuse Pop française"/>
 
     <homecard class="mb-10"
-  img="/public/img/popfr_minia.jpg"
-  title="Callogero"
+  img="/public/img/chanteurs/amir.jpg"
+  title="Amir"
   url="#"
   chanteurs="Chanteur Pop française"/>
 
     <homecard class="mb-10"
-  img="/public/img/popfr_minia.jpg"
+  img="/public/img/chanteurs/BTS.jpg"
   title="BTS"
   url="#"
   chanteurs="Groupe de K-POP"/>
 
     <homecard class="mb-10"
-  img="/public/img/popfr_minia.jpg"
+  img="/public/img/chanteurs/loona.jpg"
   title="Loona"
   url="#"
   chanteurs="Groupe de K-POP"/>
 
     <homecard class="mb-10"
-  img="/public/img/popfr_minia.jpg"
+  img="/public/img/chanteurs/lisa.jpg"
   title="Lisa"
   url="#"
   chanteurs="Chanteuse Pop Japonaise"/>
