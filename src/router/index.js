@@ -9,6 +9,7 @@ import festivalView from '../Views/festivalView.vue'
 import lesartistesView from '../Views/lesartistesView.vue' 
 import programmeView from '../Views/programmeView.vue' 
 import newsletterpopupView from '../Views/newsletter_popup.vue' 
+import errorView from '../Views/errorView.vue' 
 
 const router = createRouter ({
     history: createWebHistory(import.meta.env.BASE_URL),
@@ -23,6 +24,7 @@ const router = createRouter ({
         {path: '/lesartistes', name: 'lesartistesView', component: lesartistesView},
         {path: '/programmation', name: 'programmeView', component: programmeView},
         {path: '/newsletterpopup', name: 'newsletterpopupView', component: newsletterpopupView},
+        { path: '/:pathMatch(.*)*', name: 'errorView', component: errorView },
     ]
 })
 
