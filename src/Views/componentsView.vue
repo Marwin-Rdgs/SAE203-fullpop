@@ -44,11 +44,41 @@
   title="Chanteur 3"
 />
 
-
-
 </div>
 
 
+<div class="grid lg:grid-cols-3 md:grid-cols-2 place-items-stretch place-self-center mt-12 gap-5">
+
+    <profil 
+    nom="Angèle"
+    genre="Pop Française"
+    :portrait="angele"
+    
+    instagram="#"
+    facebook="#"
+    youtube="#"/>
+
+
+        <profil 
+    nom="Amir"
+    genre="Pop Française"
+    :portrait="amir"
+    
+    instagram="#"
+    facebook="#"
+    youtube="#"/>
+
+
+        <profil 
+    nom="Lisa"
+    genre="Pop Japonaise"
+    :portrait="lisa"
+    
+    instagram="#"
+    facebook="#"
+    youtube="#"/>
+
+</div>
 
 
 
@@ -60,10 +90,11 @@
 import homecard from "../components/homecard.vue"
 import bouton from "../components/bouton.vue"
 import artistecard from "../components/cardartiste.vue"
+import profil from "../components/profilartiste.vue"
 
 export default {
   name: "componentsView",
 
-      components:{ homecard, bouton, artistecard }
+      components:{ homecard, bouton, artistecard, profil }
 };
 </script>
