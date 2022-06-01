@@ -1,8 +1,6 @@
 <template>
 
-<h1>Contact me</h1>
-
-<form action="" class="flex justify-center">
+<form action="" class="flex justify-center mt-10">
   <div>
     <label for="">Prénom</label>
     <div class="bg-Violet rounded-15xl">

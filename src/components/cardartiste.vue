@@ -1,14 +1,14 @@
 <template>
    
-   <a :href="url">
+   <RouterLink :to="url">
     <div>
-    <img :src="img" alt="Photo artiste" class="w-full">
+    <img :src="minia" alt="Photo artiste" class="w-full">
         <div class="bg-jaune2 bg-opacity-25 text-center w-full">
             <h2>{{ title }}</h2>
             <p>Cliquez pour plus d'infos</p>
         </div>
     </div>
-   </a>
+   </RouterLink>
 
 
 
@@ -22,7 +22,7 @@ props: {
       type: String,
       default: "",
     },
-    img: {
+    minia: {
         type: String,
         default: "#",
     },

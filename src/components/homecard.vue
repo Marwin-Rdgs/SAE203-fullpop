@@ -8,7 +8,7 @@
     ></div>
     <img
       class="w-full h-56 absolute rounded-lg"
-      :src="img"
+      :src="minia"
     />
   </div>
   <div
@@ -53,18 +53,14 @@
         <p class="flex-grow-0 flex-shrink-0 text-xs text-left text-black"> {{ place }}</p>
       </div>
       <div class="flex justify-end items-center flex-grow relative gap-2">
-        <a :href="url">
+        <RouterLink :to="url">
         <button class="flex-grow-0 flex-shrink-0 w-[91px] h-[23px]">
           <div
             class="w-[91px] h-[23px] absolute left-[60px] top-[-2px] rounded-lg border-4 border-[#e0d400]"
           ></div>
           <p class="absolute left-[82px] top-1 text-xs text-left text-black">Voir Plus</p>
-          <img
-            src="expand-button-1.png"
-            class="w-[13px] h-[15px] absolute left-[132px] top-[17px] object-cover"
-          />
         </button>
-        </a>
+        </RouterLink>
       </div>
     </div>
   </div>
@@ -84,7 +80,7 @@ props: {
         default: "#",
     },
 
-    img: {
+    minia: {
       type: String,
       default: "",
     },

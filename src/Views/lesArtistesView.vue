@@ -15,11 +15,11 @@
 <div class="grid lg:grid-cols-3 md:grid-cols-2 place-items-stretch place-self-center gap-4 z-20">
 
 <card 
-  img="/public/img/chanteurs/angele.jpg"
+  :minia="angele"
   title="Angèle"/>
 
 <card 
-  img="/public/img/chanteurs/amir.jpg"
+  :minia="amir"
   title="Amir"/>
 
 
@@ -35,11 +35,11 @@
 <div class="grid lg:grid-cols-3 md:grid-cols-2 place-items-stretch place-self-center gap-4">
 
 <card 
-  img="/public/img/chanteurs/lisa.jpg"
+  :minia="lisa"
   title="Lisa"/>
 
 <card 
-  img="/public/img/chanteurs/AKB48.jpg"
+  :minia="akb48"
   title="AKB48"/>
 
 </div>
@@ -53,11 +53,11 @@
 <div class="grid lg:grid-cols-3 md:grid-cols-2 place-items-stretch place-self-center gap-4">
 
 <card 
-  img="/public/img/chanteurs/BTS.jpg"
+  :minia="bts"
   title="BTS"/>
 
 <card 
-  img="/public/img/chanteurs/loona.jpg"
+  :minia="loona"
   title="Loona"/>
 
 </div>
@@ -68,7 +68,25 @@
 import card from "../components/cardartiste.vue"
 import blob from "../components/icones/blob.vue"
 
+import angele from "../assets/img/chanteurs/angele.jpg"
+import amir from "../assets/img/chanteurs/amir.jpg"
+import lisa from "../assets/img/chanteurs/lisa.jpg"
+import akb48 from "../assets/img/chanteurs/AKB48.jpg"
+import bts from "../assets/img/chanteurs/BTS.jpg"
+import loona from "../assets/img/chanteurs/Loona.jpg"
+
 export default {
+
+  data: function() {
+    return {
+      angele,
+      amir,
+      lisa,
+      akb48,
+      bts,
+      loona,
+    }
+  },
     components:{ card, blob }
 };
 </script>

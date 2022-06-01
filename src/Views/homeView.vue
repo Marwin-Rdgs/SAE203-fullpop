@@ -2,11 +2,11 @@
 
 <div class="grid lg:grid-cols-2 grid-cols-1 my-10">
 
-  <img src="/public/img/home_img1.png" alt="Image Accueil 1">
+  <img src="../assets/img/home_img1.png" alt="Image Accueil 1">
   <p class="font-serif lg:mt-72">Un <span class="text-violet2">Festival</span> qui va éblouir <br/> vos <span class="text-jaune2">journées</span></p>
 
   <p class="font-serif lg:mt-72 lg:ml-auto">Un Week-end de<span class="text-violet2">Fun</span> autour de la <span class="text-jaune2">pop</span></p>
-  <img src="/public/img/home_img2.png" alt="Image Accueil 2">
+  <img src="../assets/img/home_img2.png" alt="Image Accueil 2">
 
 </div>
 
@@ -21,8 +21,8 @@
 <div class="grid lg:grid-cols-3 md:grid-cols-2 place-items-stretch place-self-center">
 
 
-  <homecard class="mb-10"
-  img="/public/img/popfr_minia.jpg"
+  <homecard  class="mb-10"
+  :minia="miniaPopFr"
   title="Pop Française"
   txt="2h"
   url="#"
@@ -31,7 +31,7 @@
   place="2000"/>
 
     <homecard class="mb-10"
-  img="/public/img/popjap_minia.jpg"
+  :minia="miniaPopJp"
   title="Pop Japonaise"
   txt="3h"
   url="#"
@@ -40,7 +40,7 @@
   place="4500"/>
 
     <homecard class="mb-10"
-  img="/public/img/popk_minia.jpg"
+  :minia="miniaPopKp"
   title="Pop Coréenne"
   txt="4h"
   url="#"
@@ -60,31 +60,31 @@
 
 
   <homecard class="mb-10"
-  img="/public/img/chanteurs/angele.jpg"
+  :minia="angele"
   title="Angèle"
   url="#"
   chanteurs="Chanteuse Pop française"/>
 
     <homecard class="mb-10"
-  img="/public/img/chanteurs/amir.jpg"
+  :minia="amir"
   title="Amir"
   url="#"
   chanteurs="Chanteur Pop française"/>
 
     <homecard class="mb-10"
-  img="/public/img/chanteurs/BTS.jpg"
+  :minia="bts"
   title="BTS"
   url="#"
   chanteurs="Groupe de K-POP"/>
 
     <homecard class="mb-10"
-  img="/public/img/chanteurs/loona.jpg"
+  :minia="loona"
   title="Loona"
   url="#"
   chanteurs="Groupe de K-POP"/>
 
     <homecard class="mb-10"
-  img="/public/img/chanteurs/lisa.jpg"
+  :minia="lisa"
   title="Lisa"
   url="#"
   chanteurs="Chanteuse Pop Japonaise"/>
@@ -102,7 +102,32 @@ import arrowdown from "../components/icones/arrowdown.vue"
 import homecard from "../components/homecard.vue"
 import bouton from "../components/bouton.vue"
 
+import miniaPopFr from "../assets/img/popfr_minia.jpg"
+import miniaPopJp from "../assets/img/popjap_minia.jpg"
+import miniaPopKp from "../assets/img/popk_minia.jpg"
+
+import angele from "../assets/img/chanteurs/angele.jpg"
+import amir from "../assets/img/chanteurs/amir.jpg"
+import lisa from "../assets/img/chanteurs/lisa.jpg"
+import akb48 from "../assets/img/chanteurs/AKB48.jpg"
+import bts from "../assets/img/chanteurs/BTS.jpg"
+import loona from "../assets/img/chanteurs/Loona.jpg"
+
 export default {
+  data: function() {
+    return {
+    miniaPopFr,
+    miniaPopJp,
+    miniaPopKp,
+
+    angele,
+    amir,
+    lisa,
+    akb48,
+    bts,
+    loona,
+    }
+  },
     components:{ arrowdown, homecard, bouton }
 };
 </script>

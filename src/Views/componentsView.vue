@@ -6,7 +6,7 @@
 <div class="grid lg:grid-cols-3 md:grid-cols-2 place-items-stretch place-self-center">
   <!-- Home Card - Concert & Chanteur -->
   <homecard class="mb-10"
-  img="/public/img/popk_minia.jpg"
+  img="../assets/img/popk_minia.jpg"
   title="Genre musique"
   txt="texte (duree)"
   url="#"
