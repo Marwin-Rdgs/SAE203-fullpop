@@ -9,27 +9,27 @@
     <div class="grid lg:grid-cols-3 md:grid-cols-2 mt-4 gap-y-4 text-center">
         <bouton
         txt="Le Festival" 
-        url="#"/>
+        url="/festival"/>
 
         <bouton
         txt="Programmation" 
-        url="#"/>
+        url="/programmatio"/>
 
         <bouton
         txt="Nos artistes" 
-        url="#"/>
+        url="/lesartistes"/>
 
         <bouton
         txt="Commander" 
-        url="#"/>
+        url="/"/>
 
         <bouton
         txt="Contact" 
-        url="#"/>
+        url="/contact"/>
 
         <bouton
         txt="Mentions Légales" 
-        url="#"/>
+        url="/mentionslegales"/>
 
     </div>
 </div>

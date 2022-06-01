@@ -36,7 +36,7 @@
 <div class="flex justify-center my-5">
   <bouton 
   txt="Contacter par mail"
-  url="#"/>
+  url="/"/>
 </div>
 
 <div class="flex justify-center mb-10 scale-75">

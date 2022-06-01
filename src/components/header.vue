@@ -30,7 +30,7 @@
                     <RouterLink to="/"> 
                     <bouton 
                     txt="Commander un ticket"
-                    url="#"/>
+                    url="/"/>
                     </RouterLink>
                 </div>
 

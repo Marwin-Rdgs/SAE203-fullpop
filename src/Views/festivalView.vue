@@ -18,7 +18,7 @@
 <div class="flex justify-center mb-20">
 <bouton 
   txt="Nous contacter"
-  url="#"/>
+  url="/contact"/>
 </div>
 
 </template>
