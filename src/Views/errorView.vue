@@ -31,6 +31,10 @@
         txt="Mentions Légales" 
         url="/mentionslegales"/>
 
+        <bouton
+        txt="Administration" 
+        url="/admin"/>
+
     </div>
 </div>
 

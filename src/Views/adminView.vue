@@ -6,6 +6,12 @@
         <form>
           <h6 class="text-sm">Nouveau concert</h6>
            <div class="lg:flex lg:gap-x-4">
+
+            <div class="flex gap-x-2 mb-2">
+              <span>Id</span>
+                <input type="number" class="border-2" v-model='id_concert' required />
+            </div>
+
             <div class="flex gap-x-2 mb-2">
               <span>Nom</span>
                 <input type="text" class="border-2" v-model='nom_concert' required/>
@@ -17,12 +23,12 @@
 
             <div class="flex gap-x-2 mb-2">
               <span>Nombre de place</span>
-                <input type="text" class="border-2" v-model='nb_place' required />
+                <input type="number" class="border-2" v-model='nb_place' required />
             </div>
 
             <div class="flex gap-x-2 mb-2">
               <span>Statut (assis ?)</span>
-                <input type="text" class="border-2" v-model='statut' required />
+                <input type="checkbox" class="border-2" v-model='statut' required />
             </div>
             </div>
 
@@ -63,7 +69,7 @@
                                 <span class="input-group-text">Nom</span>
                               <input type="text" class="border-2" v-model='concert.nom_concert' required />
 
-                              <button type="button"  @click="updateconcert(nom_concert)" title="Modification">
+                              <button type="button"  @click="updateconcert(concert)" title="Modification">
                                 Modification
                               </button>
 
@@ -171,7 +177,9 @@ export default {
           nom_concert: this.nom_concert,
           bio_concert: this.bio_concert,
           nb_place: this.nb_place,
-          statut: this.statut
+          statut: this.statut,
+          id_concert : this.id_concert,
+          
       })
       console.log('document créé avec le id : ', docRef.id_concert);
     },

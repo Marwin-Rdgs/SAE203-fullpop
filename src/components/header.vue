@@ -27,18 +27,18 @@
                     </div>
                 </div>
                 <div class="hidden text-white ipad_pro:flex items-center space-x-1">
-                    <div class="space-x-10">
-                    <RouterLink to="/"> 
+                    <div class="space-x-4">
                         <bouton 
                         txt="Commander un ticket"
                         url="/"/>
-                    </RouterLink>
-
-                    <RouterLink to="/"> 
+ 
                         <bouton 
                         txt="Connexion"
                         url="/login"/>
-                    </RouterLink>
+
+                        <bouton 
+                        txt="Administration"
+                        url="/admin"/>
                     </div>
                 </div>
 
@@ -54,8 +54,9 @@
                 <RouterLink class="block py-2 px-4 hover:text-white" to="/programmation" @click="menuVisible = !menuVisible">Programme</RouterLink>
                 <RouterLink class="block py-2 px-4 hover:text-white" to="/lesartistes" @click="menuVisible = !menuVisible">Artistes</RouterLink>
                 <div class="mb-4 flex gap-x-12">
-                    <RouterLink to="/"> <bouton txt="Commander un ticket" url="/" @click="menuVisible = !menuVisible"/> </RouterLink>
-                    <RouterLink to="/"> <bouton txt="Connexion" url="/login" @click="menuVisible = !menuVisible"/> </RouterLink>
+                    <bouton txt="Commander un ticket" url="/" @click="menuVisible = !menuVisible"/>
+                    <bouton txt="Connexion" url="/login" @click="menuVisible = !menuVisible"/>
+                    <bouton txt="Administration" url="/admin" @click="menuVisible = !menuVisible"/>
                 </div>
              </div>
         </div>
