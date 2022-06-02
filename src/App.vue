@@ -11,6 +11,7 @@
     <RouterLink to="/lesartistes"> Les artistes </RouterLink> |
     <RouterLink to="/artiste"> L'artiste </RouterLink> |
     <RouterLink to="/concert"> Concert </RouterLink> |
+    <RouterLink to="/login"> Login </RouterLink> |
 
     <RouterView />
     

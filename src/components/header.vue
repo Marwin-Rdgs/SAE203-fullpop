@@ -27,11 +27,19 @@
                     </div>
                 </div>
                 <div class="hidden text-white ipad_pro:flex items-center space-x-1">
+                    <div class="space-x-10">
                     <RouterLink to="/"> 
-                    <bouton 
-                    txt="Commander un ticket"
-                    url="/"/>
+                        <bouton 
+                        txt="Commander un ticket"
+                        url="/"/>
                     </RouterLink>
+
+                    <RouterLink to="/"> 
+                        <bouton 
+                        txt="Connexion"
+                        url="/login"/>
+                    </RouterLink>
+                    </div>
                 </div>
 
 
@@ -41,9 +49,16 @@
       </div>
       <!-- Menu mobile -->
       <div class="text-white bg-violet2 border-b-8 border-jaune2 ipad_pro:hidden" :class="{hidden: menuVisible}">
-        <RouterLink class="block py-2 px-4 hover:text-white" to="/programmation" @click="menuVisible = !menuVisible">Programme</RouterLink>
-        <RouterLink class="block py-2 px-4 hover:text-white" to="/lesartistes" @click="menuVisible = !menuVisible">Artistes</RouterLink>
-        <div class="mb-4"><RouterLink to="/"> <bouton txt="Commander un ticket" url="#" @click="menuVisible = !menuVisible"/> </RouterLink></div>
+          <div class="flex justify-center">
+              <div>
+                <RouterLink class="block py-2 px-4 hover:text-white" to="/programmation" @click="menuVisible = !menuVisible">Programme</RouterLink>
+                <RouterLink class="block py-2 px-4 hover:text-white" to="/lesartistes" @click="menuVisible = !menuVisible">Artistes</RouterLink>
+                <div class="mb-4 flex gap-x-12">
+                    <RouterLink to="/"> <bouton txt="Commander un ticket" url="/" @click="menuVisible = !menuVisible"/> </RouterLink>
+                    <RouterLink to="/"> <bouton txt="Connexion" url="/login" @click="menuVisible = !menuVisible"/> </RouterLink>
+                </div>
+             </div>
+        </div>
       </div>
   </nav>
 
