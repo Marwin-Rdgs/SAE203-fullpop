@@ -11,7 +11,7 @@ import programmeView from '../Views/programmeView.vue'
 import newsletterpopupView from '../Views/newsletter_popup.vue' 
 import errorView from '../Views/errorView.vue' 
 import loginView from '../Views/loginView.vue' 
-import adminView from '../Views/adminView' 
+import adminView from '../Views/adminView.vue' 
 
 const router = createRouter ({
     history: createWebHistory(import.meta.env.BASE_URL),
