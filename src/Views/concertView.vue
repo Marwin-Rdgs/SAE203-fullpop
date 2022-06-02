@@ -1,5 +1,8 @@
 <template>
 
+<!-- Paramétrable avec Deleteview / ListeView (router.js) -> /deleteparticipants/:id -->
+<!-- = Contenu paramétrable selon l'id -->
+
 <img src="../assets/img/popfr_minia.jpg" alt="" class="w-full opacity-75">
 
 <div class="flex justify-center mb-10">

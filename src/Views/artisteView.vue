@@ -1,5 +1,8 @@
 <template>
 
+<!-- Paramétrable avec Deleteview / ListeView (router.js) -> /deleteparticipants/:id -->
+<!-- = Contenu paramétrable selon l'id -->
+
 <div class="grid lg:grid-cols-2 mb-44 mt-20 gap-x-10">
     <profil 
     nom="Angèle"
