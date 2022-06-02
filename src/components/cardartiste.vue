@@ -28,7 +28,7 @@ props: {
     },
     url: {
      type: String,
-     default: "#",
+     default: "/",
     },
 }
 };
