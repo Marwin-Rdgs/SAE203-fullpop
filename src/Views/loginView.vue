@@ -3,33 +3,33 @@
         <div>
             <form class="grid grid-cols-[minmax(max-content,8rem)_minmax(10rem,35rem)] gap-1" @submit.prevent="onCnx">
             <fieldset class="contents">
-              <legend class="my-1 border-b-2 col-span-full">Se connecter</legend>
-              <label >Email :</label>
+              <legend class="my-1 border-b-2 col-span-full mb-4">Se connecter</legend>
+              <label >Mail :</label>
               <input type="email" class="rounded-sm border-2 text-black"  v-model="user.email" required>
-              <label >Password : </label>
+              <label >Mot de passe : </label>
               <input class="rounded-sm border-2 text-black" type="password" v-model="user.password" required/>
              
-                  <RouterLink to="/"><button type="submit">Se Connecter</button></RouterLink>
-                  <RouterLink to="/"><button type="button" @click="onDcnx()">Se Déconnecter</button></RouterLink>
+                  <RouterLink to="/"><button type="submit" class="border-2 border-violet2 rounded-full hover:bg-violet2 hover:text-white hover:border-gray-200 p-2 mt-4">Se Connecter</button></RouterLink>
+                  <RouterLink to="/"><button type="button" @click="onDcnx()" class="border-2 border-violet2 rounded-full hover:bg-violet2 hover:text-white hover:border-gray-200 p-2 mt-4">Se Déconnecter</button></RouterLink>
              
              
             </fieldset>
           </form>
-          <p class="w-full text-center py-3 bg-yellow-100 rounded-sm mt-5 text-black">{{message}}</p>
+          <p class="w-full text-center py-3 bg-Jaune bg-opacity-60 rounded-sm mt-5 text-black">{{message}}</p>
         </div>
         <div>
             <form class="grid grid-cols-[minmax(max-content,8rem)_minmax(10rem,35rem)] gap-1 " @submit.prevent="onCreate">
                 <fieldset class="contents">
-                    <legend class="my-1 border-b-2 col-span-full">Créer un compte</legend>
-                    <label>Login :</label>
+                    <legend class="my-1 border-b-2 col-span-full mb-4">S'inscrire</legend>
+                    <label>Identifiant :</label>
                     <input type="text" class="rounded-sm border-2 text-black" v-model="user.login">
-                    <label>Email :</label>
+                    <label>Mail :</label>
                     <input type="email" class="rounded-sm border-2 text-black" v-model="user.email">
-                    <label>Password : </label>
+                    <label>Mot de passe : </label>
                     <input type="password" class="rounded-sm border-2 text-black" v-model="user.password">
-                    <label>Répéter le Password : </label>
+                    <label>Répéter le Mot de passe : </label>
                     <input class="rounded-sm border-2 text-black" type="password" v-model="password2"/>
-                    <RouterLink to="/"><button type="submit" >Créer</button></RouterLink>   
+                    <RouterLink to="/"><button type="submit" class="border-2 border-violet2 rounded-full hover:bg-violet2 hover:text-white hover:border-gray-200 py-2 px-4 mt-4">Créer</button></RouterLink>   
                 </fieldset>
             </form>
            

@@ -14,7 +14,7 @@
 
 <div class="grid lg:grid-cols-3 md:grid-cols-2 place-items-stretch place-self-center gap-4 z-20">
 
-<card 
+<card
   :minia="angele"
   title="Angèle"/>
 
