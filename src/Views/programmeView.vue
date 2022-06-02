@@ -5,7 +5,7 @@
         <frise class="lg:ml-2 lg:h-1/3 h-1/2"/>
         <ul>
             <!-- Section Pop Française -->
-            <li v-for="concert in listeconcert" :key="concert.id" 
+            <li v-for="concert in listeconcert" :key="concert.id_concert" 
             class="mb-16"> <div class="group hover:shadow-2xl hover:scale-105 ml-auto mr-auto">
                 <div class="bg-opacity-40 bg-Jaune p-11">
                     <h2 class="z-2 flex-grow-0 flex-shrink-0 mb-4">{{ concert.nom_concert }}</h2>
@@ -14,9 +14,9 @@
                 </div>
             </div> </li>
 
-<note class="absolute w-80 -left-0"/>      
+<note class="absolute w-80 -left-0 lg:top-10 -top-32"/>      
 
-<note class="absolute w-80 left-1/2"/>
+<note class="absolute w-80 left-96"/>
 
         </ul>     
     </div>
