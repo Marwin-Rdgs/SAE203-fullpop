@@ -11,6 +11,7 @@ import programmeView from '../Views/programmeView.vue'
 import newsletterpopupView from '../Views/newsletter_popup.vue' 
 import errorView from '../Views/errorView.vue' 
 import loginView from '../Views/loginView.vue' 
+import adminView from '../Views/adminView' 
 
 const router = createRouter ({
     history: createWebHistory(import.meta.env.BASE_URL),
@@ -26,6 +27,7 @@ const router = createRouter ({
         {path: '/programmation', name: 'programmeView', component: programmeView},
         {path: '/newsletterpopup', name: 'newsletterpopupView', component: newsletterpopupView},
         {path: '/login', name: 'loginView', component: loginView},
+        {path: '/admin', name: 'adminView', component: adminView},
         { path: '/:pathMatch(.*)*', name: 'errorView', component: errorView },
     ]
 })
