@@ -9,8 +9,8 @@
               <label >Password : </label>
               <input class="rounded-sm border-2 text-black" type="password" v-model="user.password" required/>
              
-                  <button type="submit">Se Connecter</button>
-                  <button type="button" @click="onDcnx()">Se Déconnecter</button>
+                  <RouterLink to="/"><button type="submit">Se Connecter</button></RouterLink>
+                  <RouterLink to="/"><button type="button" @click="onDcnx()">Se Déconnecter</button></RouterLink>
              
              
             </fieldset>
@@ -29,7 +29,7 @@
                     <input type="password" class="rounded-sm border-2 text-black" v-model="user.password">
                     <label>Répéter le Password : </label>
                     <input class="rounded-sm border-2 text-black" type="password" v-model="password2"/>
-                    <button type="submit" >Créer</button>    
+                    <RouterLink to="/"><button type="submit" >Créer</button></RouterLink>   
                 </fieldset>
             </form>
            
