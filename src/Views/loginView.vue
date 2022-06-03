@@ -1,5 +1,5 @@
 <template>
-    <div class="mt-12 px-5 grid grid-cols-1 lg:grid-cols-2 gap-20 relative mb-64">
+    <div class="mt-12 px-5 grid grid-cols-1 lg:grid-cols-2 gap-20 relative mb-20">
         <div>
             <form class="grid grid-cols-[minmax(max-content,8rem)_minmax(10rem,35rem)] gap-1" @submit.prevent="onCnx">
             <fieldset class="contents">
@@ -9,8 +9,8 @@
               <label >Mot de passe : </label>
               <input class="rounded-sm border-2 text-black" type="password" v-model="user.password" required/>
              
-                  <RouterLink to="/"><button type="submit" class="border-2 border-violet2 rounded-full hover:bg-violet2 hover:text-white hover:border-gray-200 p-2 mt-4">Se Connecter</button></RouterLink>
-                  <RouterLink to="/"><button type="button" @click="onDcnx()" class="border-2 border-violet2 rounded-full hover:bg-violet2 hover:text-white hover:border-gray-200 p-2 mt-4">Se Déconnecter</button></RouterLink>
+                  <button type="submit" class="border-2 border-violet2 rounded-full hover:bg-violet2 hover:text-white hover:border-gray-200 p-2 mt-4">Se Connecter</button>
+                  <button type="button" @click="onDcnx()" class="border-2 border-violet2 rounded-full hover:bg-violet2 hover:text-white hover:border-gray-200 p-2 mt-4">Se Déconnecter</button>
              
              
             </fieldset>
@@ -29,12 +29,27 @@
                     <input type="password" class="rounded-sm border-2 text-black" v-model="user.password">
                     <label>Répéter le Mot de passe : </label>
                     <input class="rounded-sm border-2 text-black" type="password" v-model="password2"/>
-                    <RouterLink to="/"><button type="submit" class="border-2 border-violet2 rounded-full hover:bg-violet2 hover:text-white hover:border-gray-200 py-2 px-4 mt-4">Créer</button></RouterLink>   
+                    <button type="submit" class="border-2 border-violet2 rounded-full hover:bg-violet2 hover:text-white hover:border-gray-200 py-2 px-4 mt-4">Créer</button> 
                 </fieldset>
             </form>
            
         </div>
     </div>
+
+<div class="grid grid-cols-2 mb-10">
+    <div class="text-center">
+        <h2>Compte Admin</h2>
+        <p>mail : admin@gmail.com</p>
+        <p>root123</p>
+    </div>
+
+    <div class="text-center">
+        <h2>Compte Non-Admin</h2>
+        <p>mail : test@gmail.com</p>
+        <p>password123</p>
+    </div>
+</div>
+
 </template>
  
 <script>
@@ -130,7 +145,7 @@ export default {
                 })
                 console.log('document créé avec le id : ', docRef.id);
                 } else {
-                    console.log("user pas connecter")
+                    console.log("user pas connecté")
                 }
                 });
                
@@ -142,9 +157,3 @@ export default {
     },
 }
 </script>
- 
-<style>
- 
-</style>
- 
-
