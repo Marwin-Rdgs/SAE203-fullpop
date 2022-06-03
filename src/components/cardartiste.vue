@@ -1,6 +1,6 @@
 <template>
    
-   <RouterLink :to="url">
+   <RouterLink :to="{name:'artisteView', params: {id}}">
     <div>
     <img :src="minia" alt="Photo artiste" class="w-full">
         <div class="bg-jaune2 bg-opacity-25 text-center w-full">
@@ -26,9 +26,8 @@ props: {
         type: String,
         default: "#",
     },
-    url: {
+    id: {
      type: String,
-     default: "/",
     },
 }
 };

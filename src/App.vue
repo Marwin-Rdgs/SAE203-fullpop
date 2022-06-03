@@ -3,10 +3,10 @@
     <header1 />
   <div class="flex justify-center mt-1">
 
+    <!-- v-if="isAdmin" -->
     <bouton
     txt="Administration"
-    url="/admin"
-    v-if="isAdmin"/>
+    url="/admin"/>
 
   </div>
     <RouterView />
