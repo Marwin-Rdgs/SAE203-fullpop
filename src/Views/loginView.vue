@@ -1,4 +1,5 @@
 <template>
+                <!-- Ne reste pas connecté sur les autres pages -->
     <div class="mt-12 px-5 grid grid-cols-1 lg:grid-cols-2 gap-20 relative mb-20">
         <div>
             <form class="grid grid-cols-[minmax(max-content,8rem)_minmax(10rem,35rem)] gap-1" @submit.prevent="onCnx">
@@ -18,6 +19,7 @@
           <p class="w-full text-center py-3 bg-Jaune bg-opacity-60 rounded-sm mt-5 text-black">{{message}}</p>
         </div>
         <div>
+            <!-- L'inscription ne rajoute aucune données dans la Database où l'Authentification -->
             <form class="grid grid-cols-[minmax(max-content,8rem)_minmax(10rem,35rem)] gap-1 " @submit.prevent="onCreate">
                 <fieldset class="contents">
                     <legend class="my-1 border-b-2 col-span-full mb-4">S'inscrire</legend>

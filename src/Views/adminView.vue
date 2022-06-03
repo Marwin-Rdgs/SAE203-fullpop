@@ -69,10 +69,13 @@
                                 <span class="input-group-text">Nom</span>
                               <input type="text" class="border-2" v-model='concert.nom_concert' required />
 
+                                <!-- Ne Marche pas -->
                               <button type="button"  @click="updateconcert(concert)" title="Modification">
                                 Modification
                               </button>
 
+
+                                <!-- Ne marche pas -->
                               <button class="btn btn-light" type="button" @click="deleteconcert(concert)" title="Suppression">
                                 Supprimer
                               </button>
@@ -83,6 +86,8 @@
                 </tbody>
             </table>
 </div>
+
+<!-- Ajouter les artistes ? -->
 
 </template>
 

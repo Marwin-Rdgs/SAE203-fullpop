@@ -1,12 +1,12 @@
 <template>
 
-<!-- Paramétrable avec Deleteview / ListeView (router.js) -> /deleteparticipants/:id -->
 <!-- = Contenu paramétrable selon l'id -->
+<!-- Tels que ArtisteView (=> incorporer les images, et l'ensemble des contenus absents de la base de données -->
 
 <img src="../assets/img/popfr_minia.jpg" alt="" class="w-full opacity-75">
 
 <div class="flex justify-center mb-10">
-    <h1>Concer exclusivement <br> <span class="text-violet2 border-b-2 border-jaune2 text-center"> Pop Française </span> </h1>
+    <h1>Concert exclusivement <br> <span class="text-violet2 border-b-2 border-jaune2 text-center"> Pop Française </span> </h1>
 </div>
 
 <div class="grid lg:grid-cols-2 mb-10">

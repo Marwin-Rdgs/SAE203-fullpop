@@ -3,7 +3,8 @@
     <header1 />
   <div class="flex justify-center mt-1">
 
-    <!-- v-if="isAdmin" -->
+    <!-- Seullement visible pour les user connecté en admin -->
+                <!-- v-if="isAdmin" -->
     <bouton
     txt="Administration"
     url="/admin"/>

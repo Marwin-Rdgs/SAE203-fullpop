@@ -10,7 +10,10 @@
                 <div class="bg-opacity-40 bg-Jaune p-11">
                     <h2 class="z-2 flex-grow-0 flex-shrink-0 mb-4">{{ concert.nom_concert }}</h2>
                     <p class="z-2 text-xs">{{ concert.bio_concert }}</p>
-                    <RouterLink :to="{name:'concertView', params: {id}}" :id="concert.id_concert">
+                    
+                    <!-- Dynamisme en cours -->
+                    <!-- <RouterLink :to="{name:'concertView', params: {id}}" :id="concert.id_concert"> -->
+                    <RouterLink :to="concert.url_concert" :id="concert.id_concert">
                         <button class="ml-auto border-2 py-2 px-4 rounded-full border-violet2 text-violet2 mt-2">Voir plus</button>
                     </RouterLink>
                 </div>
@@ -69,6 +72,7 @@ methods:{
                 id_concert : doc.id,
                 nom_concert : doc.data().nom_concert,
                 bio_concert : doc.data().bio_concert,
+                url_concert : doc.data().url_concert,
             }
             this.listeconcert.push(concert);
         });
