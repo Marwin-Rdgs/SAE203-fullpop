@@ -46,7 +46,7 @@ export default {
             nom_artiste:null,
             bio_artiste:null,
             img_artiste:null,
-            wik_artiste:null,
+            wiki_artiste:null,
             instagram_artiste:null,
             facebook_artiste:null,
             youtube_artiste:null,
@@ -56,13 +56,12 @@ export default {
       }
     },
     mounted(){
-        console.log
-      this.getartiste(this.$route.params.id);
+    this.getArtiste(this.$route.params.id);
     },
     methods:{
-      async getArtiste(id_artiste){
+      async getArtiste(id){
           const firestore = getFirestore();
-          const docRef = doc(firestore, "artiste", artiste.id);
+          const docRef = doc(firestore, "artiste", id);
           this.refArtist = await getDoc(docRef);
           if(this.refArtist.exists()){
               this.artiste = this.refArtist.data();

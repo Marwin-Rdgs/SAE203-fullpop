@@ -5,12 +5,14 @@
         <frise class="lg:ml-2 lg:h-1/3 h-1/2"/>
         <ul>
             <!-- Section Pop Française -->
-            <li v-for="concert in listeconcert" :key="concert.id_concert" 
+            <li v-for="concert in listeconcert" :key="concert.id" 
             class="mb-16"> <div class="group hover:shadow-2xl hover:scale-105 ml-auto mr-auto">
                 <div class="bg-opacity-40 bg-Jaune p-11">
                     <h2 class="z-2 flex-grow-0 flex-shrink-0 mb-4">{{ concert.nom_concert }}</h2>
                     <p class="z-2 text-xs">{{ concert.bio_concert }}</p>
-                    <RouterLink :to="concert.url_concert"><button class="ml-auto border-2 py-2 px-4 rounded-full border-violet2 text-violet2 mt-2">Voir plus</button></RouterLink>
+                    <RouterLink :to="{name:'concertView', params: {id}}" :id="concert.id_concert">
+                        <button class="ml-auto border-2 py-2 px-4 rounded-full border-violet2 text-violet2 mt-2">Voir plus</button>
+                    </RouterLink>
                 </div>
             </div> </li>
 
@@ -64,16 +66,21 @@ methods:{
         const query = await getDocs(dbconcert);
         query.forEach((doc) => {
             let concert = {
-                id_concert : doc.id_concert,
+                id_concert : doc.id,
                 nom_concert : doc.data().nom_concert,
                 bio_concert : doc.data().bio_concert,
-                url_concert : doc.data().url_concert
             }
             this.listeconcert.push(concert);
         });
     }
 },
 
-    components:{ frise, fond, note }
+    components:{ frise, fond, note },
+
+    props:{
+        id: {
+            type : String,
+        }
+    },
 };
 </script>
