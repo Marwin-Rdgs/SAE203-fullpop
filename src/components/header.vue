@@ -35,10 +35,6 @@
                         <bouton 
                         txt="Connexion"
                         url="/login"/>
-
-                        <bouton 
-                        txt="Administration"
-                        url="/admin"/>
                     </div>
                 </div>
 
@@ -56,7 +52,6 @@
                 <div class="mb-4 flex gap-x-12">
                     <bouton txt="Commander un ticket" url="/" @click="menuVisible = !menuVisible"/>
                     <bouton txt="Connexion" url="/login" @click="menuVisible = !menuVisible"/>
-                    <bouton txt="Administration" url="/admin" @click="menuVisible = !menuVisible"/>
                 </div>
              </div>
         </div>
