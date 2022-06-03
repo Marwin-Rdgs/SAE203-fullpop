@@ -14,11 +14,11 @@
 
 <div class="grid lg:grid-cols-3 md:grid-cols-2 place-items-stretch place-self-center gap-4 z-20">
 
-<card v-for="artistefr in listeartistefr" :key="artistefr.id_artistefr"
+<card v-for="artistefr in listeartistefr" :key="artistefr.id"
   :minia="artistefr.img_artistefr"
 
   :title="artistefr.nom_artistefr"
-  :url="artistefr.url_artistefr"/>
+  :url="{name: 'artiste', params:{id:artistefr.id}}"/>
 
 </div>
 
@@ -31,10 +31,10 @@
 
 <div class="grid lg:grid-cols-3 md:grid-cols-2 place-items-stretch place-self-center gap-4">
 
-<card v-for="artistejap in listeartistejap" :key="artistejap.id_artistejap"
+<card v-for="artistejap in listeartistejap" :key="artistejap.id"
   :minia="artistejap.img_artistejap"
   :title="artistejap.nom_artistejap"
-  :url="artistejap.url_artistejap"/>
+  :url="{name: 'artiste', params:{id:artistejap.id}}"/>
 
 </div>
 
@@ -46,10 +46,10 @@
 
 <div class="grid lg:grid-cols-3 md:grid-cols-2 place-items-stretch place-self-center gap-4 mb-10">
 
-<card v-for="artistekpop in listeartistekpop" :key="artistekpop.id_artistekpop"
+<card v-for="artistekpop in listeartistekpop" :key="artistekpop.id"
   :minia="artistekpop.img_artistekpop"
   :title="artistekpop.nom_artistekpop"
-  :url="artistekpop.url_artistekpop"/>
+  :url="{name: 'artiste', params:{id:artistekpop.id}}"/>
 
 </div>
 
@@ -99,7 +99,7 @@ methods:{
         const query = await getDocs(dbartistefr);
         query.forEach((doc) => {
             let artistefr = {
-                id_artistefr : doc.id_artistefr,
+                id_artistefr : doc.id,
                 nom_artistefr : doc.data().nom_artistefr,
                 img_artistefr : doc.data().img_artistefr,
                 url_artistefr : doc.data().url_artistefr,
@@ -121,7 +121,7 @@ methods:{
         const query = await getDocs(dbartistejap);
         query.forEach((doc) => {
             let artistejap = {
-                id_artistejap : doc.id_artistejap,
+                id_artistejap : doc.id,
                 nom_artistejap : doc.data().nom_artistejap,
                 img_artistejap : doc.data().img_artistejap,
                 url_artistejap : doc.data().url_artistejap,
@@ -143,7 +143,7 @@ methods:{
         const query = await getDocs(dbartistekpop);
         query.forEach((doc) => {
             let artistekpop = {
-                id_artistekpop : doc.id_artistekpop,
+                id_artistekpop : doc.id,
                 nom_artistekpop : doc.data().nom_artistekpop,
                 img_artistekpop : doc.data().img_artistekpop,
                 url_artistekpop : doc.data().url_artistekpop,
