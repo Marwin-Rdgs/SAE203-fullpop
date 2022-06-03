@@ -8,11 +8,6 @@
            <div class="lg:flex lg:gap-x-4">
 
             <div class="flex gap-x-2 mb-2">
-              <span>Id</span>
-                <input type="number" class="border-2" v-model='id_concert' required />
-            </div>
-
-            <div class="flex gap-x-2 mb-2">
               <span>Nom</span>
                 <input type="text" class="border-2" v-model='nom_concert' required/>
             </div>
