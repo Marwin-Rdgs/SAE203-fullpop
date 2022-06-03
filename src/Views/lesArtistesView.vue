@@ -1,6 +1,6 @@
 <template>
 
-<blob class="absolute right-0 z-10"/>
+<blob class="absolute right-0 z-0"/>
     <div class="flex flex-row space-x-2">
         <h1>Nos Artistes :</h1>
         <img src="../components/icones/titleicon.png" alt="flèche vers le bas" class="scale-50 top-0 space-x-1">
@@ -18,7 +18,7 @@
   :minia="artistefr.img_artistefr"
 
   :title="artistefr.nom_artistefr"
-  :url="{name: 'artiste', params:{id:artistefr.id}}"/>
+  :url="artistefr.url_artistefr"/>
 
 </div>
 
@@ -34,7 +34,7 @@
 <card v-for="artistejap in listeartistejap" :key="artistejap.id"
   :minia="artistejap.img_artistejap"
   :title="artistejap.nom_artistejap"
-  :url="{name: 'artiste', params:{id:artistejap.id}}"/>
+  :url="artistejap.url_artistejap"/>
 
 </div>
 
@@ -49,7 +49,7 @@
 <card v-for="artistekpop in listeartistekpop" :key="artistekpop.id"
   :minia="artistekpop.img_artistekpop"
   :title="artistekpop.nom_artistekpop"
-  :url="{name: 'artiste', params:{id:artistekpop.id}}"/>
+  :url="artistekpop.url_artistekpop"/>
 
 </div>
 
